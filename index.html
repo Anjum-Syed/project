@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisan Mitra - Farming Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <!-- LOGIN PAGE -->
+    <div id="login-page" class="view active">
+        <div class="login-container">
+            <div class="login-text">
+                <h1>kisan mitra. 💚</h1>
+                <p>A special online portal for farmers. Trade with anyone, anywhere! Welcome! 🙏</p>
+            </div>
+            <div class="login-card">
+                <div class="login-form">
+                    <i data-lucide="sprout" class="icon-large text-green"></i>
+                    <div class="input-group">
+                        <input type="text" placeholder="Phone Number">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <button class="btn-neumorphic" onclick="showMain()">Log In 🚀</button>
+                </div>
+                <div class="login-graphic">
+                    <div class="role-toggle">
+                        <span class="active">Buyer</span>
+                        <span class="inactive border">Seller</span>
+                    </div>
+                    <div class="sphere">
+                        <h2>kisan<br>mitra.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN PORTAL -->
+    <div id="main-page" class="view">
+        <nav class="navbar">
+            <div class="nav-left">
+                <button class="menu-btn"><i data-lucide="menu"></i></button>
+                <div class="logo">
+                    <div class="logo-icon"><i data-lucide="sprout"></i></div>
+                    <h2>kisan mitra.</h2>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#marketplace">Market</a>
+                <a href="#suggestions">Smart Suggestions</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Hero -->
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1>Grow Your Farm 🌱<br>and <span>Sell Fast 💸</span></h1>
+                    <p>Your modern farming companion. Get smart suggestions and sell easily in the market. <br><br><strong>🎉 Guess what...</strong> You are doing an amazing job! Keep smiling! 😊</p>
+                    <a href="#marketplace" class="btn-primary">Explore Market 🛍️</a>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c6c13?auto=format&fit=crop&q=80&w=800" alt="Farm">
+                        <div class="floating-badge">
+                            <i data-lucide="sprout"></i>
+                            <div>
+                                <small>Smart Farming</small><br>
+                                <strong>Is Here! ✨</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Marketplace -->
+            <section id="marketplace" class="marketplace">
+                <h2>Our Marketplace</h2>
+                <p class="subtitle">Direct from farm to consumer. Your super profits await! 😉</p>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbbHMLbVwAUDT7B-oqUxYbrZguIHbIckk3yQ&s" alt="Rice">
+                            <span class="badge">Grade A</span>
+                        </div>
+                        <h3>Super Basmati Rice 🍚</h3>
+                        <p class="price">₹12,000/Quintal</p>
+                        <button class="btn-secondary" onclick="showModal()">View Details 🔍</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=400" alt="Tomatoes">
+                            <span class="badge">Standard</span>
+                        </div>
+                        <h3>Fresh Tomatoes 🍅</h3>
+                        <p class="price">₹4,000/Quintal</p>
+                        <button class="btn-secondary" onclick="showModal()">View Details 🔍</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Suggestions -->
+            <section id="suggestions" class="suggestions">
+                <div class="suggestions-box">
+                    <div class="sug-content">
+                        <h2>Your Smart Suggestions 🧠</h2>
+                        <p>Based on your soil health and weather, here are the best crops for this season. <br><br><em>(Surprise: Rain is expected today, so get ready! 🌧️🌶️)</em></p>
+                        <div class="sug-list">
+                            <div class="sug-item">
+                                <i data-lucide="sprout"></i>
+                                <div>
+                                    <h4>Soybean</h4>
+                                    <p>Optimal moisture levels expected. Perfect choice!</p>
+                                </div>
+                            </div>
+                            <div class="sug-item">
+                                <i data-lucide="sprout"></i>
+                                <div>
+                                    <h4>Cotton</h4>
+                                    <p>High temperature suitability. Perfect for this season!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sug-weather">
+                        <div class="weather-card">
+                            <h3>How's the Weather? 🌤️</h3>
+                            <div class="weather-main">
+                                <div>
+                                    <p class="temp">32°</p>
+                                    <p class="cond">Sunny Day ☀️</p>
+                                </div>
+                                <i data-lucide="sun" class="text-yellow"></i>
+                            </div>
+                            <div class="weather-details">
+                                <div class="w-row"><span>Humidity</span><strong>65%</strong></div>
+                                <div class="w-row"><span>Rainfall</span><strong>10%</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-btn" onclick="hideModal()"><i data-lucide="x"></i></button>
+            <div class="modal-img">
+                <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=400" alt="Rice">
+            </div>
+            <span class="badge">Grade A</span>
+            <h3>Super Basmati Rice 🍚</h3>
+            <p class="price">₹12,000/Quintal</p>
+            <div class="details-box">
+                <h4>Product Details</h4>
+                <p>High-quality long-grain basmati rice grown organically. Perfect for biryani!</p>
+            </div>
+            <button class="btn-primary full-width">Call Seller 📞</button>
+        </div>
+    </div>
+
+    <script>
+        // Initialize icons
+        lucide.createIcons();
+
+        // Navigation logic
+        function showMain() {
+            document.getElementById('login-page').classList.remove('active');
+            document.getElementById('main-page').classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        // Modal logic
+        function showModal() {
+            document.getElementById('modal').classList.add('active');
+        }
+        function hideModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
